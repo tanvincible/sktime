@@ -6,6 +6,9 @@ import numpy as np
 from tensorflow import keras
 
 from sktime.networks.base import BaseDeepNetwork
+from sktime.utils.validation._dependencies import _check_dl_dependencies
+
+_check_dl_dependencies(severity="warning")
 
 
 class TLENETNetwork(BaseDeepNetwork):
